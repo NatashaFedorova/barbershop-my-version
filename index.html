@@ -34,8 +34,10 @@
             <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-button" type="button">онлайн-запись</button>
+        <div class="header-connect">
+          <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="header-button btn" type="button">онлайн-запись</button>
+        </div>
       </div>
     </header>
     <main>
@@ -62,75 +64,85 @@
       </section>
       <section class="about">
         <div class="container">
-          <img
-            class="about-image"
-            src="./images/img_1_1.jpg"
-            alt="Барбер бреет шею"
-            width="270"
-            height="445"
-          />
-          <img
-            class="about-image"
-            src="./images/img_1_2.jpg"
-            alt="Парикмахер выравнивает кант"
-            width="270"
-            height="445"
-          />
-          <p class="about-pre-title">О НАС</p>
-          <h2 class="about-title section-title">Лучший Барбершоп <br />твоего города</h2>
-          <p class="about-after-title after-title">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
-          </p>
-          <p class="about-text">
-            Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда
-            ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
-            которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
-            каждого, кто к нам приходит!
-          </p>
-          <button class="about-button" type="button">онлайн-запись</button>
+          <ul class="about-list list">
+            <li class="about-item item">
+              <img
+                class="about-image"
+                src="./images/img_1_1.jpg"
+                alt="Барбер бреет шею"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="about-item item">
+              <img
+                class="about-image"
+                src="./images/img_1_2.jpg"
+                alt="Парикмахер выравнивает кант"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div class="about-content">
+            <p class="about-pre-title">О НАС</p>
+            <h2 class="about-title section-title">Лучший Барбершоп <br />твоего города</h2>
+            <p class="about-after-title after-title">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </p>
+            <p class="about-text">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="about-button btn" type="button">онлайн-запись</button>
+          </div>
         </div>
       </section>
       <section class="price">
         <div class="container">
           <p class="price-pre-title">Проведи время в компании лучших мастеров</p>
           <h2 class="price-title section-title">Услуги и цены</h2>
-          <ul class="price-list list">
-            <li class="price-item">
-              <p class="price-item-text">Мужская стрижка</p>
-              <p class="price-item-text">от 300 грн.</p>
-            </li>
-            <li class="price-item">
-              <p class="price-item-text">Стрижка бороды</p>
-              <p class="price-item-text">от 200 грн.</p>
-            </li>
-            <li class="price-item">
-              <p class="price-item-text">Стрижка усов</p>
-              <p class="price-item-text">от 200 грн.</p>
-            </li>
-            <li class="price-item">
-              <p class="price-item-text">Бритье опасной бритвой</p>
-              <p class="price-item-text">от 200 грн.</p>
-            </li>
-          </ul>
-          <ul class="price-list list">
-            <li class="price-item">
-              <p class="price-item-text">Cтрижка у стажера</p>
-              <p class="price-item-text">от 50 грн.</p>
-            </li>
-            <li class="price-item">
-              <p class="price-item-text">Стрижка под насадку</p>
-              <p class="price-item-text">от 200 грн.</p>
-            </li>
-            <li class="price-item">
-              <p class="price-item-text">Детская стрижка (до 12 лет)</p>
-              <p class="price-item-text">от 300 грн.</p>
-            </li>
-            <li class="price-item">
-              <p class="price-item-text">Камуфлирование седины</p>
-              <p class="price-item-text">от 200 грн.</p>
-            </li>
-          </ul>
-          <button class="price-button" type="button">онлайн-запись</button>
+          <div class="price-wrap">
+            <ul class="price-list list">
+              <li class="price-item">
+                <p class="price-item-text">Мужская стрижка</p>
+                <p class="price-item-text">от 300 грн.</p>
+              </li>
+              <li class="price-item">
+                <p class="price-item-text">Стрижка бороды</p>
+                <p class="price-item-text">от 200 грн.</p>
+              </li>
+              <li class="price-item">
+                <p class="price-item-text">Стрижка усов</p>
+                <p class="price-item-text">от 200 грн.</p>
+              </li>
+              <li class="price-item">
+                <p class="price-item-text">Бритье опасной бритвой</p>
+                <p class="price-item-text">от 200 грн.</p>
+              </li>
+            </ul>
+            <ul class="price-list list">
+              <li class="price-item">
+                <p class="price-item-text">Cтрижка у стажера</p>
+                <p class="price-item-text">от 50 грн.</p>
+              </li>
+              <li class="price-item">
+                <p class="price-item-text">Стрижка под насадку</p>
+                <p class="price-item-text">от 200 грн.</p>
+              </li>
+              <li class="price-item">
+                <p class="price-item-text">Детская стрижка (до 12 лет)</p>
+                <p class="price-item-text">от 300 грн.</p>
+              </li>
+              <li class="price-item">
+                <p class="price-item-text">Камуфлирование седины</p>
+                <p class="price-item-text">от 200 грн.</p>
+              </li>
+            </ul>
+          </div>
+          <button class="price-button btn" type="button">онлайн-запись</button>
         </div>
       </section>
       <section class="feature">
