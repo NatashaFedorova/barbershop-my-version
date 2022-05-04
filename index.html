@@ -381,12 +381,40 @@
         <div class="container">
           <section class="online">
             <h2 class="online-title section-title">Онлайн-запись</h2>
-            <!-- <form action="/" method="post">
-          <input type="text" value="Имя&#42;" />
-          <input type="tel" value="Телефон&#42;" />
-          <input type="text" value="Сообщение" />
-          <button type="button">отправить</button>
-        </form> -->
+            <form class="online-form">
+              <div class="online-inputs">
+                <div class="online-field">
+                  <input
+                    class="online-input"
+                    type="text"
+                    name="name"
+                    id="online-name"
+                    placeholder=" "
+                  />
+                  <label class="online-label" for="online-name">Имя*</label>
+                </div>
+                <div class="online-field">
+                  <input
+                    class="online-input"
+                    type="tel"
+                    name="tel"
+                    id="online-tel"
+                    placeholder=" "
+                  />
+                  <label class="online-label" for="online-tel">Телефон*</label>
+                </div>
+              </div>
+              <div class="online-comment-field">
+                <textarea
+                  class="online-textarea"
+                  name="comment"
+                  id="online-comment"
+                  placeholder=" "
+                ></textarea>
+                <label class="online-comment-label" for="online-comment">Cообщение</label>
+              </div>
+              <button class="online-button btn" type="submit">отправить</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="contacts-title section-title">Контакты</h2>
@@ -437,7 +465,7 @@
       </div>
     </footer>
     <!-- is-hidden -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="modal-icon" width="18" height="18">
@@ -480,9 +508,23 @@
             />
           </div>
           <div class="form-field">
-            <label class="modal-form-label value-2" for="user-comment"
-              >Введіть номер телефону</label
-            >
+            <label class="modal-form-label value-2" for="user-tel">Введіть номер телефону</label>
+            <div class="input-thumb">
+              <input
+                class="modal-form-input value-2"
+                type="tel"
+                name="user-tel"
+                placeholder="+38 067 000 00 00"
+                required
+                id="user-tel"
+              />
+              <svg class="icon-person" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="modal-form-label value-2" for="user-comment">Комментарий</label>
             <textarea
               class="modal-form-textarea"
               name="user-comment"
@@ -509,7 +551,19 @@
             <option value="kiev">Kiev</option>
             <option value="lviv">Lviv</option>
           </select>
-
+          <div class="chackbox-526">
+            <input class="chackbox-526-input" type="checkbox" name="color" id="color-chackbox" />
+            <label class="chackbox-526-label" for="color-chackbox"> Изменить цвет</label>
+          </div>
+          <div class="privacy">
+            <input class="privacy-input" type="checkbox" name="privacy" id="privacy" />
+            <label for="privacy" class="privacy-label">
+              <svg class="privacy-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-icon-check"></use>
+              </svg>
+              Соглашаюсь на все</label
+            >
+          </div>
           <button type="submit">Отправить заявку</button>
         </form>
       </div>

@@ -24,8 +24,10 @@ ol {
 img {
   display: block;
 }
+textarea,
 input {
   background-color: transparent;
+  outline: none;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -546,9 +548,105 @@ body {
   flex-grow: 1;
   padding-top: 130px;
   padding-bottom: 130px;
+  padding-right: 40px;
 }
 .online-title {
   color: var(--first-title-color);
+  margin-bottom: 44px;
+}
+.online-field {
+  width: 270px;
+  position: relative;
+}
+.online-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.online-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: transform 250ms, color 250ms;
+}
+.online-input {
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: 100%;
+  height: 24px;
+  transition: border-color 250ms;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.online-field:last-child {
+  width: 260px;
+}
+.online-input:focus {
+  border-color: #ffffff;
+}
+.online-input:focus + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-input:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-input:not(:placeholder-shown) {
+  border-color: #ffffff;
+}
+
+.online-comment-field {
+  position: relative;
+  margin-bottom: 44px;
+}
+.online-textarea {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: 560px;
+  height: 76px;
+  resize: none;
+}
+.online-comment-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: transform 250ms, color 250ms;
+}
+.online-textarea:focus {
+  border-color: #ffffff;
+}
+.online-textarea:focus + .online-comment-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-textarea:not(:placeholder-shown) + .online-comment-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-textarea:not(:placeholder-shown) {
+  border-color: #ffffff;
+}
+.online-button {
+  color: #ffffff;
 }
 /* =====================contacts================ */
 .contacts {
@@ -683,18 +781,23 @@ body {
   width: 100%;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 2px solid rgba(196, 198, 25, 0.2);
   padding: 11px 12px;
+  outline: transparent;
+}
+.modal-form-input:focus {
+  border-color: #ff6c00;
+  color: #ff6c00;
 }
 .modal-form-input:placeholder-shown .modal-form-input:invalid {
   border-color: green;
 }
-.modal-form-input:valid {
+/* .modal-form-input:valid {
   border-color: green;
 }
 .modal-form-input:invalid {
   border-color: rgb(128, 0, 0);
-}
+} */
 .modal-form-input::placeholder {
   color: rgb(142, 207, 154);
 }
@@ -738,3 +841,124 @@ body {
   fill: #ffffff;
   background-color: #ff6c00;
 }
+.input-thumb {
+  position: relative;
+}
+.icon-person {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  fill: #369d38;
+}
+.modal-form-input:focus + .icon-person {
+  fill: #ff6c00;
+}
+.modal-form-input.value-2 {
+  padding-left: 38px;
+  margin-bottom: 0;
+}
+/* --------------------------------------- */
+.chackbox-526 {
+  margin: 10px 0;
+}
+.chackbox-526-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.chackbox-526-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.chackbox-526-label::before {
+  content: '';
+  width: 40px;
+  height: 22px;
+  border-radius: 50px;
+  border: 1px solid #303030;
+  margin-right: 5px;
+  background-color: rgb(143, 134, 134);
+  transition: background-color 250ms;
+}
+.chackbox-526-label::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #303030;
+  background-color: lightgrey;
+  margin-right: 5px;
+  transition: transform 250ms, background-color 250ms;
+}
+.chackbox-526-input:checked + .chackbox-526-label:after {
+  transform: translate(18px);
+  background-color: #ff6c00;
+}
+.chackbox-526-input:checked + .chackbox-526-label::before {
+  background-color: #933d00;
+}
+/* --------------------------------------- */
+.privacy {
+  margin: 15px 0;
+}
+.privacy-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.privacy-label {
+  font-size: 14px;
+  color: #303030;
+  display: flex;
+  align-items: center;
+}
+.privacy-icon {
+  width: 16px;
+  height: 15px;
+  border-radius: 3px;
+  border: 2px solid #303030;
+  margin-right: 5px;
+  fill: transparent;
+}
+.privacy-input:checked + .privacy-label > .privacy-icon {
+  border: 0;
+  background-color: #ff6c00;
+  fill: #ffffff;
+}
+/* .privacy-label::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border-radius: 3px;
+  border: 2px solid #303030;
+  margin-right: 5px;
+}
+.privacy-input:checked + .privacy-label::before {
+  background-color: #ff6c00;
+  background-image: url(../images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: 0;
+} */ ;
