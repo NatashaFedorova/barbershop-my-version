@@ -1,2 +1,23 @@
-@import './latout/header';
-@import './latout/hero';
+@import './utils/vars';
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+
+@import './components/container';
+@import './components/top-title';
+@import './components/title';
+@import './components/bottom-text';
+@import './components/btn';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/price';
+@import './layout/feature';
+@import './layout/masters';
+@import './layout/gallery';
+@import './layout/section-wrap';
+@import './layout/online';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/modal';

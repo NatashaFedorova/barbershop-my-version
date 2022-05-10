@@ -1,0 +1,104 @@
+.online {
+  flex-grow: 1;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  padding-right: 40px;
+}
+.online-title {
+  color: var(--first-title-color);
+  margin-bottom: 44px;
+}
+.online-field {
+  width: 270px;
+  position: relative;
+}
+.online-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.online-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: transform 250ms, color 250ms;
+}
+.online-input {
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: 100%;
+  height: 24px;
+  transition: border-color 250ms;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.online-field:last-child {
+  width: 260px;
+}
+.online-input:focus {
+  border-color: #ffffff;
+}
+.online-input:focus + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-input:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-input:not(:placeholder-shown) {
+  border-color: #ffffff;
+}
+
+.online-comment-field {
+  position: relative;
+  margin-bottom: 44px;
+}
+.online-textarea {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: 560px;
+  height: 76px;
+  resize: none;
+}
+.online-comment-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: transform 250ms, color 250ms;
+}
+.online-textarea:focus {
+  border-color: #ffffff;
+}
+.online-textarea:focus + .online-comment-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-textarea:not(:placeholder-shown) + .online-comment-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-textarea:not(:placeholder-shown) {
+  border-color: #ffffff;
+}
+.online-button {
+  color: #ffffff;
+}
