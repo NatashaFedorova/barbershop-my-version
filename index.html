@@ -22,27 +22,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a class="header-link-logo link animate__animated animate__bounce" href="./index.html">
-          <svg class="header-logo" width="65" height="55">
+        <a class="logo header__logo animate__animated animate__bounce" href="./index.html">
+          <svg class="logo-icon" width="65" height="55">
             <use href="./images/icons.svg#icon-Logo"></use>
           </svg>
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item"><a class="header-link link" href="">О нас</a></li>
-            <li class="header-item"><a class="header-link link" href="">Услуги и цены</a></li>
-            <li class="header-item"><a class="header-link link" href="#masters">Мастера</a></li>
-            <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
+        <nav class="navigation">
+          <ul class="menu-list list">
+            <li class="menu-list__item"><a class="menu-list__link link" href="">О нас</a></li>
+            <li class="menu-list__item">
+              <a class="menu-list__link link" href="">Услуги и цены</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link link" href="#masters">Мастера</a>
+            </li>
+            <li class="menu-list__item"><a class="menu-list__link link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-button btn" type="button" data-modal-open>онлайн-запись</button>
+        <div class="connect">
+          <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="connect__btn btn" type="button" data-modal-open>онлайн-запись</button>
         </div>
       </div>
     </header>
@@ -51,20 +56,22 @@
         <div class="container">
           <!-- h2 скрыть css -->
           <h2 class="visually-hidden">Social networks</h2>
-          <div class="hero-soc">
-            <ul class="hero-list list">
-              <li class="hero-item">
-                <a class="hero-link link" href="./index.html" target="_blank">Instagram</a>
+          <div class="soc">
+            <ul class="soc-list list">
+              <li class="soc-list__item">
+                <a class="soc-list__link link" href="./index.html" target="_blank">Instagram</a>
               </li>
-              <li class="hero-item">
-                <a class="hero-link link" href="./index.html" target="_blank">Youtube</a>
+              <li class="soc-list__item">
+                <a class="soc-list__link link" href="./index.html" target="_blank">Youtube</a>
               </li>
             </ul>
           </div>
           <div class="hero-content">
-            <p class="hero-pre-title pre-title" lang="en">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title" lang="en">BarberShop</h1>
-            <p class="hero-after-title after-title">
+            <p class="hero-content__top-text top-text top-text--light" lang="en">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero-content__title" lang="en">BarberShop</h1>
+            <p class="hero-content__bottom-text bottom-text bottom-text--light">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
             </p>
           </div>
@@ -73,18 +80,18 @@
       <section class="about">
         <div class="container">
           <ul class="about-list list">
-            <li class="about-item item">
+            <li class="about-list__item item">
               <img
-                class="about-image"
+                class="about-list__image"
                 src="./images/img_1_1.jpg"
                 alt="Барбер бреет шею"
                 width="270"
                 height="445"
               />
             </li>
-            <li class="about-item item">
+            <li class="about-list__item item">
               <img
-                class="about-image"
+                class="about-list__image"
                 src="./images/img_1_2.jpg"
                 alt="Парикмахер выравнивает кант"
                 width="270"
@@ -93,25 +100,27 @@
             </li>
           </ul>
           <div class="about-content">
-            <p class="about-pre-title pre-title">О НАС</p>
-            <h2 class="about-title section-title">Лучший Барбершоп <br />твоего города</h2>
-            <p class="about-after-title after-title">
+            <p class="about-content__top-text top-text top-text--dark">О НАС</p>
+            <h2 class="about-content__title title title--dark">
+              Лучший Барбершоп <br />твоего города
+            </h2>
+            <p class="about-content__bottom-text bottom-text bottom-text--dark">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
             </p>
-            <p class="about-text">
+            <p class="about-content__text">
               Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
               когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
               команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="about-button btn" type="button">онлайн-запись</button>
+            <button class="about-content__btn btn" type="button">онлайн-запись</button>
           </div>
         </div>
       </section>
       <section class="price">
         <div class="container">
-          <p class="price-pre-title pre-title">Проведи время в компании лучших мастеров</p>
-          <h2 class="price-title section-title">Услуги и цены</h2>
+          <p class="price-top-text top-text">Проведи время в компании лучших мастеров</p>
+          <h2 class="price-title title">Услуги и цены</h2>
           <div class="price-wrap">
             <ul class="price-list list price-list-light">
               <li class="price-item">
@@ -178,9 +187,9 @@
             </ul>
           </div>
           <div class="feature-content">
-            <p class="feature-pre-title pre-title">Cтарая традиционная школа</p>
-            <h2 class="feature-title section-title">Почему приходят именно к нам?</h2>
-            <p class="feature-after-title after-title">
+            <p class="feature-top-text top-text top-text--light">Cтарая традиционная школа</p>
+            <h2 class="feature-title title">Почему приходят именно к нам?</h2>
+            <p class="feature-bottom-text bottom-text">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
               прочитать.
             </p>
@@ -189,8 +198,8 @@
       </section>
       <section class="masters" id="masters">
         <div class="container">
-          <p class="masters-pre-title pre-title">для настоящих ценителей атмосферы</p>
-          <h2 class="masters-title section-title">Наши мастера</h2>
+          <p class="masters-top-text top-text">для настоящих ценителей атмосферы</p>
+          <h2 class="masters-title title">Наши мастера</h2>
           <ul class="masters-list list">
             <li class="masters-item">
               <div class="masters-thumb">
@@ -340,7 +349,7 @@
         <div class="container">
           <!-- h2 будет скрыт css -->
           <h2 class="visually-hidden">Фотогалерея</h2>
-          <p class="gallery-text line-pre-text">На латинском языке “барба” означает “борода”</p>
+          <p class="gallery-text line-top-text">На латинском языке “барба” означает “борода”</p>
           <ul class="gallery-list list">
             <li class="gallery-item">
               <img
@@ -443,7 +452,7 @@
                 </li>
               </ul>
             </address>
-            <b class="contacts-time-title line-pre-text">время работы</b>
+            <b class="contacts-time-title line-top-text">время работы</b>
             <p class="contacts-time-text">Ежедневно с 9:00 до 22:00</p>
           </section>
         </div>
