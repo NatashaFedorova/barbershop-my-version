@@ -37,27 +37,30 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-.price-item-text:first-child {
-  order: -1;
-}
-.price-item:last-child {
-  margin-bottom: 0;
-}
-.price-item::before {
-  content: '';
-  width: 100px;
-  height: 1px;
-  flex-grow: 1;
-  margin-left: 6px;
-  margin-right: 6px;
-  background-color: rgba(157, 164, 189, 0.12);
+
+  &::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    flex-grow: 1;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: rgba(157, 164, 189, 0.12);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .price-item-text {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+
+  &:first-child {
+    order: -1;
+  }
 }
 .price-button {
   color: var(--first-btn-color);

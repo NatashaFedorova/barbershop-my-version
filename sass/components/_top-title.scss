@@ -6,14 +6,17 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: currentColor;
+    margin-right: 21px;
+  }
 }
-.top-text::before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  background: currentColor;
-  margin-right: 21px;
-}
+
 .top-text--dark {
   color: #303030;
 }

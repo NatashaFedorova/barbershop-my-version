@@ -13,8 +13,9 @@
   border-radius: 25px;
   background-color: transparent;
   transition: background-color 250ms linear, color 250ms linear;
-}
-.btn:hover,
-.btn:focus {
-  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
