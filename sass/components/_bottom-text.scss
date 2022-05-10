@@ -1,7 +1,8 @@
 .bottom-text {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(null, 18px, 1.67);
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
 }
 .bottom-text--dark {
   color: #555555;
