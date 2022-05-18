@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <a class="logo header__logo animate__animated animate__bounce" href="./index.html">
           <svg class="logo-icon" width="65" height="55">
@@ -49,34 +49,34 @@
           <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
           <button class="connect__btn btn" type="button" data-modal-open>онлайн-запись</button>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h2 class="visually-hidden">Social networks</h2>
-          <div class="soc">
-            <ul class="soc-list list">
-              <li class="soc-list__item">
-                <a class="soc-list__link link" href="./index.html" target="_blank">Instagram</a>
-              </li>
-              <li class="soc-list__item">
-                <a class="soc-list__link link" href="./index.html" target="_blank">Youtube</a>
-              </li>
-            </ul>
-          </div>
-          <div class="hero-content">
-            <p class="hero-content__top-text top-text top-text--light" lang="en">
-              A hair salon for men in Kyiv
-            </p>
-            <h1 class="hero-content__title" lang="en">BarberShop</h1>
-            <p class="hero-content__bottom-text bottom-text bottom-text--light">
-              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-            </p>
-          </div>
+      </div> 
+    </header> -->
+    <!-- <main> -->
+    <section class="hero">
+      <div class="container">
+        <h2 class="visually-hidden">Social networks</h2>
+        <div class="soc">
+          <ul class="soc-list list">
+            <li class="soc-list__item">
+              <a class="soc-list__link link" href="./index.html" target="_blank">Instagram</a>
+            </li>
+            <li class="soc-list__item">
+              <a class="soc-list__link link" href="./index.html" target="_blank">Youtube</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="about">
+        <div class="hero-content">
+          <p class="hero-content__top-text top-text top-text--light" lang="en">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="hero-content__title" lang="en">BarberShop</h1>
+          <p class="hero-content__bottom-text bottom-text bottom-text--light">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="about">
         <div class="container">
           <ul class="about-list list">
             <li class="about-list__item item">
@@ -342,49 +342,124 @@
             </li>
           </ul>
         </div>
-      </section>
-      -->
-      <section class="gallery">
-        <div class="container">
-          <h2 class="visually-hidden">Фотогалерея</h2>
-          <p class="gallery-text">На латинском языке “барба” означает “борода”</p>
-          <ul class="gallery-list list">
-            <li class="gallery-item">
-              <img
-                src="./images/img_3_1.jpg"
-                alt="Барбер стрижет клиента"
-                width="270"
-                height="360"
+      </section> -->
+    <section class="gallery">
+      <div class="container">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+        <p class="gallery-text">На латинском языке “барба” означает “борода”</p>
+        <ul class="gallery-list list">
+          <li class="gallery-item">
+            <picture>
+              <source
+                srcset="./images/img_3_1.jpg 270w, ./images/img_3_1_2x.jpg 540w"
+                media="(min-width: 1200px)"
               />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/img_3_2.jpg"
-                alt="Барбер стрижет клиента"
-                width="270"
-                height="360"
+              <source
+                srcset="
+                  ./images/gallery_tad/img_3_1_1x_tab.jpg 330w,
+                  ./images/gallery_tad/img_3_1_2x_tab.jpg 660w
+                "
+                media="(min-width: 768px)"
               />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/img_3_3.jpg"
-                alt="Барбер стрижет клиента"
-                width="270"
-                height="360"
+              <source
+                srcset="
+                  ./images/gallery_mob/img_3_1_1x_mob.jpg 418w,
+                  ./images/gallery_mob/img_3_1_2x_mob.jpg 836w
+                "
+                media="(min-width: 320px)"
               />
-            </li>
-            <li class="gallery-item">
               <img
-                src="./images/img_3_4.jpg"
+                srcset="./images/img_3_1.jpg 270w, ./images/img_3_1_2x.jpg 540w"
+                src="./images/gallery_mob/img_3_1_1x_mob.jpg"
                 alt="Барбер стрижет клиента"
-                width="270"
-                height="360"
               />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <div class="section-wrap">
+            </picture>
+          </li>
+          <li class="gallery-item">
+            <picture>
+              <source
+                srcset="./images/img_3_2.jpg 270w, ./images/img_3_2_2x.jpg 540w"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery_tad/img_3_2_1x_tab.jpg 330w,
+                  ./images/gallery_tad/img_3_2_2x_tab.jpg 660w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery_mob/img_3_2_1x_mob.jpg 418w,
+                  ./images/gallery_mob/img_3_2_2x_mob.jpg 836w
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                srcset="./images/img_3_2.jpg 270w, ./images/img_3_2_2x.jpg 540w"
+                src="./images/gallery_mob/img_3_2_1x_mob.jpg"
+                alt="Барбер стрижет клиента"
+              />
+            </picture>
+          </li>
+          <li class="gallery-item">
+            <picture>
+              <source
+                srcset="./images/img_3_3.jpg 270w, ./images/img_3_3_2x.jpg 540w"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery_tad/img_3_3_1x_tab.jpg 330w,
+                  ./images/gallery_tad/img_3_3_2x_tab.jpg 660w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery_mob/img_3_3_1x_mob.jpg 418w,
+                  ./images/gallery_mob/img_3_3_2x_mob.jpg 836w
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                srcset="./images/img_3_3.jpg 270w, ./images/img_3_3_2x.jpg 540w"
+                src="./images/gallery_mob/img_3_3_1x_mob.jpg"
+                alt="Барбер стрижет клиента"
+              />
+            </picture>
+          </li>
+          <li class="gallery-item">
+            <picture>
+              <source
+                srcset="./images/img_3_4.jpg 270w, ./images/img_3_4_2x.jpg 540w"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery_tad/img_3_4_1x_tab.jpg 330w,
+                  ./images/gallery_tad/img_3_4_2x_tab.jpg 660w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery_mob/img_3_4_1x_mob.jpg 418w,
+                  ./images/gallery_mob/img_3_4_2x_mob.jpg 836w
+                "
+                media="(min-width: 480px)"
+              />
+              <img
+                srcset="./images/img_3_4.jpg 270w, ./images/img_3_4_2x.jpg 540w"
+                src="./images/gallery_mob/img_3_4_1x_mob.jpg"
+                alt="Барбер стрижет клиента"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- <div class="section-wrap">
         <div class="container">
           <section class="online">
             <h2 class="online-title section-title">Онлайн-запись</h2>
@@ -469,7 +544,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-close" type="button" data-modal-close>
