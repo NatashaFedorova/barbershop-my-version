@@ -1,6 +1,23 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @include mobile {
+    width: 448px;
+  }
+  // @include tablet {
+  //   width: 720px;
+  // }
+  // @include mobile {
+  //   width: 1200px;
+  // }
+
+  @include media(min-width, 768px) {
+    width: 720px;
+  }
+  @include media(min-width, 1200px) {
+    width: 1200px;
+  }
 }
